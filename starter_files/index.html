@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Coffee Survey</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Coffee Survey</h1>
+
+
+        <!-- **Please provide your contact information**
+            - Full Name _(required)_
+            - Email
+            - Phone Number -->
+
+         <p>*Required</p>
+
+            <div id="inputData">
+         <input type="text" id=name_id placeholder="Name" />
+         <input type="email" id=email_id placeholder="Email" />
+         <input type="tel" id=phone_id placeholder="Phone Number" />
+            </div>
+
+            <br / />
+
+        <!-- **Which style of coffee do you prefer? _(Choose 1 option)_**
+            - Espresso
+            - Americano
+            - Cappuccino
+            - Other -->
+
+            <div class="coffee_style">
+                            <label for="style">Which style of coffee do you prefer?</label>
+                            <select name="style" id="style">
+                                <option value="espresso">Espresso</option>
+                                <option value="americano">Americano</option>
+                                <option value="cappuccino">Cappuccino</option>
+                            </select>
+                        </div>
+
+        <!-- **Do you add anything to your coffee? _(Check all that apply)_**
+            - Sugar
+            - Artificial Sweetener
+            - Cream
+            - Milk
+            - Butter
+            - Water -->
+
+            <p>
+              Do you add anything to your coffee?
+            </p>
+            <input type="radio" name="one" value="x"/>Sugar<br />
+            <input type="radio" name="two" value="x"/>Artificial Sweetener<br />
+            <input type="radio" name="three" value="x"/>Cream<br />
+            <input type="radio" name="four" value="x"/>Milk<br />
+            <input type="radio" name="five" value="x"/>Water<br />
+
+            <br / />
+
+
+
+        <!-- **What size do you normally order? _(Choose 1 option)_**
+            - Small _(default)_
+            - Medium
+            - Large -->
+
+            <h2>What size do you normally order?</h2>
+            <input type="checkbox" name="one" value="x"/>Small<br />
+            <input type="checkbox" name="one" value="x"/>Medium<br />
+            <input type="checkbox" name="one" value="x"/>Large<br />
+
+            <br / />
+
+        <!-- **How many cups of coffee do you drink per day, on average? _(Choose 1 option)_**
+            - Between 0-1 cups _(default)_
+            - Between 2-3 cups
+            - More than 3 cups
+
+        **What is your fondest memory related to coffee?** -->
+
+
+        <div class="submit_container">
+               <input type="submit" id="submit_button" value="Submit!" />
+           </div>
+
+
+
+
+        <form action="http://foo.com" method="POST">
+        </form>
+    </body>
+</html>
