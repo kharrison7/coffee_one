@@ -1,5 +1,5 @@
-#submit_button{
-  background-color: #1fabe5; /* Green */
+/*#submit_button{
+  background-color: #1fabe5;
   border: none;
   color: white;
   font-family: Helvetica, Arial, sans-serif;
@@ -9,4 +9,79 @@
   display: inline-block;
   font-size: 16px;
   border-radius: 10px;
+}*/
+
+
+
+
+/*From: https://codepen.io/dpip/pen/ZydVEz*/
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Bungee);
+
+/* Content_button is the parent selector (wraper)-
+   the div between is the child - first I
+   apply styles to #content_button
+*/
+#content_button {
+  height: 100px;
+  width: 200px;
+  border: 1px solid #1F3A93;
+  border-radius: 10px;
+  background-color: #1F3A93;
+  text-align: center;
+  margin-left: 40%;
+  margin-top: 140px;
+  transition: all .4s;
+  cursor: pointer;
+}
+
+/* Next I apply styles to the text "content"
+that i want to appear between the div tags
+(child)
+*/
+
+#content_button div {
+  margin-top: 28px;
+  color: white;
+  font-size: 34px;
+  font-family: 'Bungee';
+}
+
+/* This can seem confusing, but - below
+I'm telling #content_button to display
+the string 'content' with-in the child
+element before my hover call and that
+it should transition back to its original
+state after the cursor leaves the hover
+event.
+*/
+
+#content_button div:before {
+  content: 'click';
+    transition: all .4s;
+}
+
+/* Now I want - on the hover of the parent -
+for the child(div) to change its content
+string 'content' to the opposite 'tnetnoc'
+and do so transitioning for .4 seconds.
+*/
+
+#content_button:hover div:before {
+  content: 'do it';
+    transition: all .4s;
+}
+
+/* Finally I decided that i would like
+the parent to have a couple charming
+effects as well. Here I'm telling the
+border to round and the background
+color to switch at the same rate.
+*/
+#content_button:hover {
+ background-color: #22313F;
+ transition: all .4s;
+ border-radius: 3em;
 }

@@ -14,12 +14,14 @@
             - Email
             - Phone Number -->
 
-         <p>*Required</p>
+         <!-- <h6>*Required</h6> -->
 
             <div id="inputData">
-         <input type="text" id=name_id placeholder="Name" />
-         <input type="email" id=email_id placeholder="Email" />
-         <input type="tel" id=phone_id placeholder="Phone Number" />
+         <label for="full_name">Full Name:</label><input type="text" id=name_id placeholder="Name" /><label for="full_name">*required</label><br / />
+
+         <label for="full_name">Email Address:</label><input type="email" id=email_id placeholder="Email" /><label for="full_name">*required</label><br / />
+
+         <label for="full_name">Phone Number:</label><input type="tel" id=phone_id placeholder="Phone Number" /><label for="full_name">*required</label><br / />
             </div>
 
             <br / />
@@ -31,7 +33,7 @@
             - Other -->
 
             <div class="coffee_style">
-                            <label for="style">Which style of coffee do you prefer?</label>
+                            <label for="style"><b>Which style of coffee do you prefer?</b></label>
                             <select name="style" id="style">
                                 <option value="espresso">Espresso</option>
                                 <option value="americano">Americano</option>
@@ -47,14 +49,13 @@
             - Butter
             - Water -->
 
-            <p>
-              Do you add anything to your coffee?
-            </p>
-            <input type="radio" name="one" value="x"/>Sugar<br />
-            <input type="radio" name="two" value="x"/>Artificial Sweetener<br />
-            <input type="radio" name="three" value="x"/>Cream<br />
-            <input type="radio" name="four" value="x"/>Milk<br />
-            <input type="radio" name="five" value="x"/>Water<br />
+
+              <h3>Do you add anything to your coffee?</h3>
+            <input type="checkbox" name="one" value="x"/>Sugar<br />
+            <input type="checkbox" name="two" value="x"/>Artificial Sweetener<br />
+            <input type="checkbox" name="three" value="x"/>Cream<br />
+            <input type="checkbox" name="four" value="x"/>Milk<br />
+            <input type="checkbox" name="five" value="x"/>Water<br />
 
             <br / />
 
@@ -65,10 +66,10 @@
             - Medium
             - Large -->
 
-            <h2>What size do you normally order?</h2>
-            <input type="checkbox" name="one" value="x"/>Small<br />
-            <input type="checkbox" name="one" value="x"/>Medium<br />
-            <input type="checkbox" name="one" value="x"/>Large<br />
+            <h3>What size do you normally order?</h3>
+            <input type="radio" name="one" value="x"/>Small<br />
+            <input type="radio" name="one" value="x"/>Medium<br />
+            <input type="radio" name="one" value="x"/>Large<br />
 
             <br / />
 
@@ -77,12 +78,34 @@
             - Between 2-3 cups
             - More than 3 cups
 
+
+            <h3>What size do you normally order?</h3>
+            <input type="radio" name="one" value="x"/>Small<br />
+            <input type="radio" name="one" value="x"/>Medium<br />
+            <input type="radio" name="one" value="x"/>Large<br />
+
         **What is your fondest memory related to coffee?** -->
+<h3>How many cups of coffee do you drink per day, on average?</h3>
+<input type="radio" name="one" value="x"/>Between 0-1 cups<br />
+<input type="radio" name="one" value="x"/>Between 2-3 cups<br />
+<input type="radio" name="one" value="x"/>More than 3 cups<br />
 
 
-        <div class="submit_container">
-               <input type="submit" id="submit_button" value="Submit!" />
-           </div>
+
+<h3>What is your fondest memory related to coffee?</h3>
+<textarea cols="50" rows="20" />Submit Comments.</textarea>
+
+
+
+
+<div id = "content_button">
+  <div>
+  </div>
+</div>
+
+        <!-- <div class="submit_container">
+               <input type="submit" id="content_button" value="Submit!"/>
+           </div> -->
 
 
 
